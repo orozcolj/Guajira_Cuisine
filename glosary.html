@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingredient Glossary</title>
+    <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="glosary.css">
 </head>
 <body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo_sena.png" alt="Logo SENA" class="sena-logo">
+            <h1>GUAJIRA'S CUISINE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="glosary.html">Glosario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sidebar left"></div>
+    <div class="sidebar right"></div>
     <nav class="alpha-nav" aria-label="Alphabetical navigation">
         <a href="#A">A</a>
         <a href="#B">B</a>
@@ -27,15 +43,8 @@
         <a href="#W">W</a>
         <a href="#Y">Y</a>
     </nav>
-    <header class="Guajira"></header>
-
-    <header class="glossary-header">
-
-        <h1>Ingredient Glossary</h1>
-        
-    </header>
-
     <main>
+        <h1>Ingredient Glossary</h1>
 
         <!-- Página generada automáticamente desde los archivos en /res -->
 
@@ -77,6 +86,13 @@
                     </div>
                 </article>
                 <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Onion.jpg" alt="Big Onion"></div>
+                    <div class="card-text">
+                        <h3>Big Onion</h3>
+                        <p>Cebolla grande</p>
+                    </div>
+                </article>
+                <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Breadcrumbs.jpg" alt="Breadcrumbs"></div>
                     <div class="card-text">
                         <h3>Breadcrumbs</h3>
@@ -97,13 +113,7 @@
                         <p>Mantequilla</p>
                     </div>
                 </article>
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Onion.jpg" alt="Big Onion"></div>
-                    <div class="card-text">
-                        <h3>Big Onion</h3>
-                        <p>Cebolla grande</p>
-                    </div>
-                </article>
+                
             </div>
         </section>
 
@@ -133,6 +143,10 @@
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Chicken Breast.png" alt="Chicken Breast"></div>
                     <div class="card-text"><h3>Chicken Breast</h3><p>Pechuga de pollo</p></div>
+                </article>
+                <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Chives.jpeg" alt="Chinese Scallion"></div>
+                    <div class="card-text"><h3>Chinese Scallion</h3><p>Cebollino chino</p></div>
                 </article>
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Chives.jpeg" alt="Chives"></div>
@@ -167,6 +181,10 @@
                     <div class="card-text"><h3>Coconut</h3><p>Coco</p></div>
                 </article>
                 <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Cooking cream.jpg" alt="Cooking Cream"></div>
+                    <div class="card-text"><h3>Cooking Cream</h3><p>Crema para cocinar</p></div>
+                </article>
+                <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Cornstarch.webp" alt="Cornstarch"></div>
                     <div class="card-text"><h3>Cornstarch</h3><p>Fécula de maíz</p></div>
                 </article>
@@ -174,27 +192,22 @@
                     <div class="ingredient-avatar"><img src="res/Cream Cheese.jpg" alt="Cream Cheese"></div>
                     <div class="card-text"><h3>Cream Cheese</h3><p>Queso crema</p></div>
                 </article>
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Cooking cream.jpg" alt="Cooking Cream"></div>
-                    <div class="card-text"><h3>Cooking Cream</h3><p>Crema para cocinar</p></div>
-                </article>
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Chives.jpeg" alt="Chinese Scallion"></div>
-                    <div class="card-text"><h3>Chinese Scallion</h3><p>Cebollino chino</p></div>
-                </article>
+                
+                
             </div>
         </section>
 
         <section id="D" class="alpha-section">
             <h2>D</h2>
             <div class="glossary-container">
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Double Cream Cheese.webp" alt="Double Cream Cheese"></div>
-                    <div class="card-text"><h3>Double Cream Cheese</h3><p>Queso doble crema</p></div>
-                </article>
+                
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Double cream cheese.jpg" alt="Double Cream Cheese"></div>
                     <div class="card-text"><h3>Double Cream Cheese</h3><p>Queso doble crema</p></div>
+                </article>
+                <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/White Wine.jpg" alt="Dry White Wine"></div>
+                    <div class="card-text"><h3>Dry White Wine</h3><p>Vino blanco seco</p></div>
                 </article>
             </div>
         </section>
@@ -225,6 +238,10 @@
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Garlic.webp" alt="Garlic"></div>
                     <div class="card-text"><h3>Garlic</h3><p>Ajo</p></div>
+                </article>
+                <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Grated Panela.jpg" alt="Grated Panela"></div>
+                    <div class="card-text"><h3>Grated Panela</h3><p>Panela rallada</p></div>
                 </article>
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Green Bell Pepper.jpg" alt="Green Bell Pepper"></div>
@@ -263,7 +280,7 @@
                 </article>
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Heavy Cream.jpg" alt="Heavy Cream"></div>
-                    <div class="card-text"><h3>Heavy Cream</h3><p>Crema de leche</p></div>
+                    <div class.card-text"><h3>Heavy Cream</h3><p>Crema de leche</p></div>
                 </article>
             </div>
         </section>
@@ -271,18 +288,7 @@
         <section id="L" class="alpha-section">
             <h2>L</h2>
             <div class="glossary-container">
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Lemon Juice.jpg" alt="Lemon Juice"></div>
-                    <div class="card-text"><h3>Lemon Juice</h3><p>Jugo de limón</p></div>
-                </article>
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Milk.jpg" alt="Milk"></div>
-                    <div class="card-text"><h3>Milk</h3><p>Leche</p></div>
-                </article>
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Green Onion.jpg" alt="Long Onion"></div>
-                    <div class="card-text"><h3>Long Onion</h3><p>Cebolla larga</p></div>
-                </article>
+                
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Green Papaya.png" alt="Large Green Papaya"></div>
                     <div class="card-text"><h3>Large Green Papaya</h3><p>Papaya verde grande</p></div>
@@ -291,6 +297,15 @@
                     <div class="ingredient-avatar"><img src="res/Cinnamon.avif" alt="Large Cinnamon Stick"></div>
                     <div class="card-text"><h3>Large Cinnamon Stick</h3><p>Canela en astilla grande</p></div>
                 </article>
+                <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Lemon Juice.jpg" alt="Lemon Juice"></div>
+                    <div class="card-text"><h3>Lemon Juice</h3><p>Jugo de limón</p></div>
+                </article>
+                
+                <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Green Onion.jpg" alt="Long Onion"></div>
+                    <div class="card-text"><h3>Long Onion</h3><p>Cebolla larga</p></div>
+                </article>
             </div>
         </section>
 
@@ -298,13 +313,22 @@
             <h2>M</h2>
             <div class="glossary-container">
                 <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Mustard.jpg" alt="Mustard"></div>
-                    <div class="card-text"><h3>Mustard</h3><p>Mostaza</p></div>
-                </article>
-                <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Carrot.jpg" alt="Medium Carrots"></div>
                     <div class="card-text"><h3>Medium Carrots</h3><p>Zanahorias medianas</p></div>
                 </article>
+                <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Milk.jpg" alt="Milk"></div>
+                    <div class="card-text"><h3>Milk</h3><p>Leche</p></div>
+                </article>
+                <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Mixed sauces.webp" alt="Mixed Sauces"></div>
+                    <div class="card-text"><h3>Mixed Sauces</h3><p>Mezcla de salsas</p></div>
+                </article>
+                <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Mustard.jpg" alt="Mustard"></div>
+                    <div class="card-text"><h3>Mustard</h3><p>Mostaza</p></div>
+                </article>
+                
             </div>
         </section>
 
@@ -342,9 +366,15 @@
                     <div class="card-text"><h3>Panela</h3><p>Panela</p></div>
                 </article>
                 <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Grated Panela.jpg" alt="Grated Panela"></div>
-                    <div class="card-text"><h3>Grated Panela</h3><p>Panela rallada</p></div>
+                    <div class="ingredient-avatar"><img src="res/Pastusa potato.webp" alt="Pastusa Potato"></div>
+                    <div class="card-text"><h3>Pastusa Potato</h3><p>Papa pastusa</p></div>
                 </article>
+
+                <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Peeled White Corn.webp" alt="Peeled White Corn"></div>
+                    <div class="card-text"><h3>Peeled White Corn</h3><p>Maíz blanco pelado</p></div>
+                </article>
+                
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Pepper.avif" alt="Pepper"></div>
                     <div class="card-text"><h3>Pepper</h3><p>Pimienta</p></div>
@@ -361,10 +391,7 @@
                     <div class="ingredient-avatar"><img src="res/Potato.webp" alt="Potato"></div>
                     <div class="card-text"><h3>Potato</h3><p>Papa</p></div>
                 </article>
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Pastusa potato.webp" alt="Pastusa Potato"></div>
-                    <div class="card-text"><h3>Pastusa Potato</h3><p>Papa pastusa</p></div>
-                </article>
+                
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Prunes.avif" alt="Prunes"></div>
                     <div class="card-text"><h3>Prunes</h3><p>Ciruelas pasas</p></div>
@@ -410,6 +437,17 @@
                     <div class="card-text"><h3>Salt</h3><p>Sal</p></div>
                 </article>
                 <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Shrimp.png" alt="Shrimp"></div>
+                    <div class="card-text">
+                        <h3>Shrimp</h3>
+                        <p>Camarón</p>
+                    </div>
+                </article>
+                <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Shredded chicken breast.jpg" alt="Shredded Chicken Breast"></div>
+                    <div class="card-text"><h3>Shredded Chicken Breast</h3><p>Pechuga de pollo desmenuzada</p></div>
+                </article>
+                <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Sliced Cheese.jpg" alt="Sliced Cheese"></div>
                     <div class="card-text"><h3>Sliced Cheese</h3><p>Queso tajado</p></div>
                 </article>
@@ -427,29 +465,22 @@
                 </article>
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Sweet Corn.webp" alt="Sweet Corn"></div>
-                    <div class="card-text"><h3>Sweet Corn</h3><p>Maíz tierno</p></div>
+                    <div class="card-text"><h3>Sweet Corn</h3><p>Maíz dulce</p></div>
                 </article>
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Shrimp.png" alt="Shrimp"></div>
-                    <div class="card-text">
-                        <h3>Shrimp</h3>
-                        <p>Camarón</p>
-                    </div>
-                </article>
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Sweet Corn.webp" alt="Tender Corn"></div>
-                    <div class="card-text"><h3>Tender Corn</h3><p>Maíz tierno</p></div>
-                </article>
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Shredded chicken breast.jpg" alt="Shredded Chicken Breast"></div>
-                    <div class="card-text"><h3>Shredded Chicken Breast</h3><p>Pechuga de pollo desmenuzada</p></div>
-                </article>
+                
+                
+                
             </div>
         </section>
 
         <section id="T" class="alpha-section">
             <h2>T</h2>
             <div class="glossary-container">
+
+                <article class="ingredient-card">
+                    <div class="ingredient-avatar"><img src="res/Sweet Corn.webp" alt="Tender Corn"></div>
+                    <div class="card-text"><h3>Tender Corn</h3><p>Maíz tierno</p></div>
+                </article>
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Tomato Sauce.jpg" alt="Tomato Sauce"></div>
                     <div class="card-text"><h3>Tomato Sauce</h3><p>Salsa de tomate</p></div>
@@ -464,10 +495,7 @@
                     <div class="ingredient-avatar"><img src="res/Vanilla Extract.jpg" alt="Vanilla Extract"></div>
                     <div class="card-text"><h3>Vanilla Extract</h3><p>Esencia de vainilla</p></div>
                 </article>
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Mixed sauces.webp" alt="Mixed Sauces"></div>
-                    <div class="card-text"><h3>Mixed Sauces</h3><p>Mezcla de salsas</p></div>
-                </article>
+                
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Various Sauces.webp" alt="Various Sauces"></div>
                     <div class="card-text"><h3>Various Sauces</h3><p>Salsas varias</p></div>
@@ -475,20 +503,6 @@
                 <article class="ingredient-card">
                     <div class="ingredient-avatar"><img src="res/Vegetable Broth.jpg" alt="Vegetable Broth"></div>
                     <div class="card-text"><h3>Vegetable Broth</h3><p>Caldo de verduras</p></div>
-                </article>
-            </div>
-        </section>
-
-        <section id="W" class="alpha-section">
-            <h2>W</h2>
-            <div class="glossary-container">
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/White Wine.jpg" alt="Dry White Wine"></div>
-                    <div class="card-text"><h3>Dry White Wine</h3><p>Vino blanco seco</p></div>
-                </article>
-                <article class="ingredient-card">
-                    <div class="ingredient-avatar"><img src="res/Peeled White Corn.webp" alt="Peeled White Corn"></div>
-                    <div class="card-text"><h3>Peeled White Corn</h3><p>Maíz blanco pelado</p></div>
                 </article>
             </div>
         </section>
@@ -536,10 +550,12 @@
                 </article>
             </div>
         </section>
-
+<div class="chef"></div>
     </main>
-<div class="footer">
-            <div class="footer-text">SENA Standard Recipe Book</div>
-        </div>
+    
+    <footer>
+        <img src="img/logo_sena.png" alt="Logo SENA" class="sena-logo">
+        <p>© 2025 SENA. All rights reserved. | Created by Fulanito de Tal | La Guajira, Colombia | SENA GSCM</p>
+    </footer>
 </body>
 </html>

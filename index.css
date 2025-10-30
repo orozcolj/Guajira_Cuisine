@@ -1,0 +1,311 @@
+/* ======== CONFIGURACIÓN GENERAL Y FUENTES ======== */
+:root {
+    --font-principal: 'Montserrat', sans-serif;
+    --color-texto-oscuro: #333;
+    --color-texto-claro: #f0f0f0;
+    --color-texto-secundario: #666;
+    --color-borde: #e0e0e0;
+    --color-fondo-tarjeta: #2a2a2a;
+}
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-principal);
+    color: var(--color-texto-oscuro);
+    background-color: #ffffff;
+}
+
+/* ======== HERO / ENCABEZADO ======== */
+.hero-section {
+    /* Asegúrate de tener la imagen de fondo correcta */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.imgur.com/example-hero-bg.jpg'); /* REEMPLAZA ESTA IMAGEN */
+    background-size: cover;
+    background-position: center;
+    color: var(--color-texto-claro);
+    text-align: center;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; /* Altura del hero */
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.sena-logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Truco para hacer el logo SVG del SENA blanco */
+.logo-white {
+    filter: brightness(0) invert(1);
+}
+
+.hero-section h1 {
+    font-family: 'Montserrat', sans-serif; /* Usa una fuente bold o black */
+    font-weight: 900;
+    font-size: 3.5rem; /* Tamaño grande */
+    margin: 1.5rem 0 1rem 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Los diamantes al lado del título */
+.hero-section h1::before,
+.hero-section h1::after {
+    content: '◆';
+    font-size: 0.5em; /* Más pequeño que el título */
+    margin: 0 1rem;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.cactus-icon {
+    width: 40px;
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+
+/* ======== CONTENEDOR DE PÁGINA (PARA CACTUS) ======== */
+.page-wrapper {
+    /* Aquí cargamos los cactus decorativos del fondo.
+      Asegúrate de tener estas imágenes. Deben ser PNG con fondo transparente.
+    */
+    background-image: url('https://i.imgur.com/example-cactus-left.png'), url('https://i.imgur.com/example-cactus-right.png'); /* REEMPLAZA ESTAS IMÁGENES */
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
+    background-size: 180px, 150px;
+    background-attachment: fixed; /* Los cactus se quedan fijos al hacer scroll */
+    padding-bottom: 100px; /* Espacio para que se vean los cactus */
+}
+
+/* ======== ESTILOS DE SECCIÓN ======== */
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.content-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    color: var(--color-texto-oscuro);
+}
+
+/* ======== SLIDER DE RECETAS (CSS-Only) ======== */
+.slider-container {
+    overflow-x: auto; /* ¡La magia del slider! */
+    -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+    padding-bottom: 1.5rem; /* Espacio para la sombra */
+}
+
+/* Escondemos la barra de scroll (opcional pero se ve mejor) */
+.slider-container::-webkit-scrollbar {
+    height: 8px;
+}
+.slider-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+.slider-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.recipe-slider {
+    display: flex; /* Pone las tarjetas en fila */
+    flex-wrap: nowrap; /* Evita que salten de línea */
+    gap: 1.5rem; /* Espacio entre tarjetas */
+    width: max-content; /* Permite que el contenido se desborde */
+}
+
+.recipe-card {
+    width: 300px; /* Ancho fijo para cada tarjeta */
+    flex-shrink: 0; /* Evita que las tarjetas se encojan */
+    border-bottom: 3px solid var(--color-borde);
+    background: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Asegura que la imagen llene el espacio */
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.tag {
+    font-size: 0.8rem;
+    color: var(--color-texto-secundario);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.recipe-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.recipe-card p {
+    font-size: 0.9rem;
+    color: var(--color-texto-secundario);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.recipe-button {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-texto-oscuro);
+    font-weight: 600;
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--color-borde);
+    transition: border-color 0.3s ease;
+}
+
+.recipe-button:hover {
+    border-color: var(--color-texto-oscuro);
+}
+
+/* ======== TARJETA DE GLOSARIO ======== */
+.glossary-card {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    overflow: hidden; /* Importante para redondear esquinas */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
+}
+
+.glossary-card img {
+    width: 100%;
+    height: auto; /* La altura se ajusta */
+    display: block;
+}
+
+.glossary-content {
+    background-color: var(--color-fondo-tarjeta);
+    color: var(--color-texto-claro);
+    padding: 2.5rem;
+    position: relative; /* Para posicionar la etiqueta */
+}
+
+.tag-pill {
+    position: absolute;
+    top: -15px; /* La mitad de su altura */
+    right: 2.5rem;
+    background-color: #fff;
+    color: var(--color-texto-oscuro);
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.glossary-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.glossary-content p {
+    color: #ccc; /* Un gris más claro */
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Botón claro para fondo oscuro */
+.recipe-button.light {
+    color: var(--color-texto-claro);
+    border-color: #777;
+}
+
+.recipe-button.light:hover {
+    border-color: var(--color-texto-claro);
+}
+
+/* ======== PIE DE PÁGINA ======== */
+footer {
+    text-align: center;
+    padding: 3rem 1.5rem 2rem 1.5rem;
+    border-top: 1px solid var(--color-borde);
+    margin-top: 3rem; /* Separación de la sección de cactus */
+}
+
+footer .sena-logo {
+    width: 80px; /* Mismo tamaño que el de arriba */
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: var(--color-texto-secundario);
+    line-height: 1.5;
+}
+
+/* ======== ADAPTACIÓN MÓVIL (Media Queries) ======== */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section h1::before,
+    .hero-section h1::after {
+        margin: 0 0.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Ocultamos los cactus en móviles para no saturar */
+    .page-wrapper {
+        background-image: none;
+        padding-bottom: 0;
+    }
+
+    .recipe-card {
+        width: 260px; /* Tarjetas más pequeñas en móvil */
+    }
+
+    .glossary-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .tag-pill {
+        right: 1.5rem;
+    }
+}
